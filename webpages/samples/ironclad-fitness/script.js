@@ -147,7 +147,7 @@ trialForm.addEventListener("submit", (e) => {
 
   // form.elements.name, because form.name is the form's own name attribute
   const firstName = trialForm.elements.name.value.trim().split(" ")[0];
-  trialMsg.textContent = `You're in, ${firstName}! Check your email for your 7-day pass. 💪`;
+  trialMsg.textContent = `You're in, ${firstName}! Check your email for your 7-day pass.`;
   trialMsg.className = "trial__msg ok";
   trialForm.reset();
 });

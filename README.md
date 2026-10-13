@@ -2,11 +2,11 @@
 
 Modern, responsive websites for small businesses, built to look great on any device and turn visitors into customers.
 
-🔗 **Live portfolio:** [pudintq.github.io/PORTFOLIO/webpages/samples](https://pudintq.github.io/PORTFOLIO/webpages/samples/)
+**Live portfolio:** [pudintq.github.io/PORTFOLIO/webpages/samples](https://pudintq.github.io/PORTFOLIO/webpages/samples/)
 
-💼 **Hire me on Fiverr:** [fiverr.com/pudintq](https://www.fiverr.com/pudintq)
+**Hire me on Fiverr:** [fiverr.com/pudintq](https://www.fiverr.com/pudintq)
 
-> ⚠️ **These are concept projects.** All businesses, names, reviews and prices are fictional. They were created to show the style and quality of work I offer. A client website would be built around your real brand, content and goals.
+> **Note: these are concept projects.** All businesses, names, reviews and prices are fictional. They were created to show the style and quality of work I offer. A client website would be built around your real brand, content and goals.
 
 ---
 
@@ -16,15 +16,15 @@ Hi! I'm **Martín Rawlins** (also known as **PudinTQ**), a Computer Engineering 
 
 I build clean, fast websites for small businesses using HTML, CSS and JavaScript, with a focus on mobile-friendly design and clear communication.
 
-- 🌎 Based in Chile: my working hours overlap well with clients in the Americas
-- 🗣️ Languages: Spanish (native) and English
-- ⚡ Quick replies and regular progress updates
+- Based in Chile: my working hours overlap well with clients in the Americas
+- Languages: Spanish (native) and English
+- Quick replies and regular progress updates
 
 ---
 
 ## Projects
 
-### 🦷 Brightside Dental: Dental Clinic
+### Brightside Dental: Dental Clinic
 Clean, trustworthy design for a family dental practice.
 
 - Online appointment request form with validation
@@ -38,7 +38,7 @@ Clean, trustworthy design for a family dental practice.
 
 ---
 
-### ☕ Ember & Oak: Coffee Shop
+### Ember & Oak: Coffee Shop
 Warm, editorial design for an independent café and bakery.
 
 - Tabbed menu (Coffee / Brunch / Bakery)
@@ -51,7 +51,7 @@ Warm, editorial design for an independent café and bakery.
 
 ---
 
-### 💪 Ironclad Fitness: Gym
+### Ironclad Fitness: Gym
 Bold, high-energy dark theme for a strength and conditioning gym.
 
 - Interactive weekly class schedule with live spot availability
@@ -72,11 +72,11 @@ Bold, high-energy dark theme for a strength and conditioning gym.
 - **Google Fonts**
 
 ### Every project includes
-- ✅ Fully responsive design (mobile, tablet, desktop)
-- ✅ Fast loading with no heavy libraries
-- ✅ Scroll-reveal animations, with respect for users' reduced-motion settings
-- ✅ Mobile navigation menu
-- ✅ Basic SEO (meta tags and semantic structure)
+- Fully responsive design (mobile, tablet, desktop)
+- Fast loading with no heavy libraries
+- Scroll-reveal animations, with respect for users' reduced-motion settings
+- Mobile navigation menu
+- Basic SEO (meta tags and semantic structure)
 
 ## Services
 

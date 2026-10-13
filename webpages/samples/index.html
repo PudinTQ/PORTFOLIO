@@ -45,7 +45,8 @@
     .about { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; margin: 100px 0 80px; }
     .about p:not(.kicker) { color: #555; font-size: 17px; }
     .facts { list-style: none; display: grid; gap: 12px; }
-    .facts li { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid #eee; border-radius: 14px; padding: 14px 16px; font-size: 15px; }
+    .facts li { display: flex; gap: 12px; align-items: baseline; background: #fff; border: 1px solid #eee; border-radius: 14px; padding: 14px 16px; font-size: 15px; }
+    .facts li::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: #1dbf73; transform: translateY(-1px); }
 
     .contact { background: #111; color: #fff; border-radius: 24px; padding: 56px 32px; text-align: center; }
     .contact p { color: #aaa; margin-bottom: 26px; }
@@ -72,7 +73,7 @@
     <p class="kicker">Sample Work</p>
     <h1>Websites built to bring in customers.</h1>
     <p class="lead">These are concept websites I designed to show the kind of work I offer small businesses: fast, responsive and focused on turning visitors into bookings.</p>
-    <p class="note">ℹ️ All businesses, names, reviews and prices shown are fictional. Your website would be built around your real brand and content.</p>
+    <p class="note"><strong>Note:</strong> All businesses, names, reviews and prices shown are fictional. Your website would be built around your real brand and content.</p>
 
     <div class="grid">
       <a class="card" href="brightside-dental/index.html">
@@ -108,10 +109,10 @@
         <p>I'm a Computer Engineering student (<em>Ingeniería Civil Informática</em>) from Chile, currently completing my professional internship at OpenHumboldt. I build clean, fast websites for small businesses using HTML, CSS and JavaScript, with a focus on mobile-friendly design and clear communication.</p>
       </div>
       <ul class="facts">
-        <li><span>🌎</span>Based in Chile, with working hours that overlap well with the Americas</li>
-        <li><span>🗣️</span>Spanish (native) and English</li>
-        <li><span>⚡</span>Quick replies and regular progress updates</li>
-        <li><span>💬</span>Every project gets a custom quote</li>
+        <li>Based in Chile, with working hours that overlap well with the Americas</li>
+        <li>Spanish (native) and English</li>
+        <li>Quick replies and regular progress updates</li>
+        <li>Every project gets a custom quote</li>
       </ul>
     </section>
 
@@ -125,7 +126,7 @@
       </div>
     </section>
 
-    <footer class="foot">© <span id="year"></span> Martín Rawlins (PudinTQ)</footer>
+    <footer class="foot">Copyright <span id="year"></span> Martín Rawlins (PudinTQ)</footer>
   </div>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>

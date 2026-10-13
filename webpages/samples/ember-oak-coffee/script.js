@@ -61,7 +61,7 @@ let bagCount = 0;
 document.querySelectorAll(".add").forEach((btn) =>
   btn.addEventListener("click", () => {
     bagCount++;
-    showToast(`☕ ${btn.dataset.name} added — ${bagCount} item${bagCount > 1 ? "s" : ""} in your bag`);
+    showToast(`${btn.dataset.name} added — ${bagCount} item${bagCount > 1 ? "s" : ""} in your bag`);
   })
 );
 
@@ -94,7 +94,7 @@ newsForm.addEventListener("submit", (e) => {
     newsMsg.textContent = "Please enter a valid email address.";
     return;
   }
-  newsMsg.textContent = "You're in! Check your inbox for your free coffee voucher. ☕";
+  newsMsg.textContent = "You're in! Check your inbox for your free coffee voucher.";
   newsForm.reset();
 });
 
