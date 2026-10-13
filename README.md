@@ -78,29 +78,6 @@ Bold, high-energy dark theme for a strength and conditioning gym.
 - ✅ Mobile navigation menu
 - ✅ Basic SEO (meta tags and semantic structure)
 
-## Project Structure
-
-```
-PORTFOLIO/
-├── README.md
-└── webpages/
-    └── samples/
-        ├── index.html              # Portfolio home page
-        ├── brightside-dental/      # Dental clinic demo
-        ├── ember-oak-coffee/       # Coffee shop demo
-        └── ironclad-fitness/       # Gym demo
-```
-
-Each project is self-contained with its own `index.html`, `styles.css` and `script.js`.
-
-## Run Locally
-
-No installation needed. Clone the repository and open `webpages/samples/index.html` in your browser:
-
-```bash
-git clone https://github.com/PudinTQ/PORTFOLIO.git
-```
-
 ## Services
 
 I build websites for small businesses, including:
