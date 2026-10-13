@@ -2,7 +2,7 @@
 
 Modern, responsive websites for small businesses, built to look great on any device and turn visitors into customers.
 
-🔗 **Live portfolio:** [your-username.github.io/portfolio](https://your-username.github.io/portfolio/)
+🔗 **Live portfolio:** [pudintq.github.io/portfolio](https://pudintq.github.io/portfolio/)
 
 > ⚠️ **These are concept projects.** All businesses, names, reviews and prices are fictional. They were created to show the style and quality of work I offer. A client website would be built around your real brand, content and goals.
 
@@ -20,7 +20,7 @@ Clean, trustworthy design for a family dental practice.
 - Sticky "Book Appointment" button on mobile
 - Embedded Google Map
 
-[View live demo](https://your-username.github.io/portfolio/brightside-dental/) · [Source code](brightside-dental/)
+[View live demo](https://pudintq.github.io/portfolio/brightside-dental/) · [Source code](brightside-dental/)
 
 ---
 
@@ -33,7 +33,7 @@ Warm, editorial design for an independent café and bakery.
 - Animated SVG illustration and scrolling marquee
 - Newsletter sign-up form
 
-[View live demo](https://your-username.github.io/portfolio/ember-oak-coffee/) · [Source code](ember-oak-coffee/)
+[View live demo](https://pudintq.github.io/portfolio/ember-oak-coffee/) · [Source code](ember-oak-coffee/)
 
 ---
 
@@ -46,7 +46,7 @@ Bold, high-energy dark theme for a strength and conditioning gym.
 - Coach profiles and testimonial section
 - Free-trial sign-up form
 
-[View live demo](https://your-username.github.io/portfolio/ironclad-fitness/) · [Source code](ironclad-fitness/)
+[View live demo](https://pudintq.github.io/portfolio/ironclad-fitness/) · [Source code](ironclad-fitness/)
 
 ---
 
@@ -81,7 +81,7 @@ Each project is self-contained with its own `index.html`, `styles.css` and `scri
 No installation needed. Clone the repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/PudinTQ/portfolio.git
 ```
 
 ## Services
@@ -98,6 +98,7 @@ I build websites for small businesses, including:
 
 Interested in a website for your business? Let's talk.
 
+- **GitHub:** [github.com/PudinTQ](https://github.com/PudinTQ)
 - **Fiverr:** [fiverr.com/your-username](https://www.fiverr.com/your-username)
 - **Upwork:** [upwork.com/freelancers/your-profile](https://www.upwork.com/freelancers/your-profile)
 - **Email:** your-email@example.com
