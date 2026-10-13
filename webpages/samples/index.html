@@ -3,37 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Design Portfolio | Demo Projects</title>
+  <title>Martín Rawlins | Web Design Portfolio</title>
+  <meta name="description" content="Web design portfolio of Martín Rawlins (PudinTQ): modern, responsive websites for small businesses.">
+  <meta name="author" content="Martín Rawlins">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: "Inter", system-ui, sans-serif; background: #fafafa; color: #111; line-height: 1.6; padding: 80px 20px; }
+    body { font-family: "Inter", system-ui, sans-serif; background: #fafafa; color: #111; line-height: 1.6; padding: 32px 20px 40px; }
     .wrap { max-width: 1100px; margin: 0 auto; }
+
+    .top { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 72px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand__mark { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: #111; color: #fff; font-weight: 800; }
+    .brand strong { display: block; line-height: 1.2; }
+    .brand small { color: #777; font-size: 13px; }
+    .btn { display: inline-block; padding: 11px 20px; border-radius: 999px; background: #111; color: #fff; font-weight: 600; font-size: 14px; text-decoration: none; transition: .2s; border: 1.5px solid #111; }
+    .btn:hover { background: #1dbf73; border-color: #1dbf73; }
+    .btn--light { background: #fff; color: #111; border-color: #fff; }
+    .btn--outline { background: transparent; color: #fff; border-color: rgba(255,255,255,.35); }
+    .btn--outline:hover { background: #fff; color: #111; border-color: #fff; }
+
     h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 14px; }
+    h2 { font-size: clamp(28px, 3.5vw, 38px); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 14px; }
     .kicker { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .14em; color: #888; margin-bottom: 10px; }
     .lead { color: #555; font-size: 18px; max-width: 600px; margin-bottom: 20px; }
     .note { display: inline-block; background: #fef3c7; color: #78350f; font-size: 14px; padding: 10px 16px; border-radius: 12px; margin-bottom: 48px; }
-    .thumb { position: relative; }
-    .thumb::after { content: "Concept"; position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,.92); color: #111; font-family: "Inter", sans-serif; font-style: normal; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
+
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
     .card { display: block; color: inherit; text-decoration: none; background: #fff; border: 1px solid #eee; border-radius: 20px; overflow: hidden; transition: .3s; }
     .card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,.08); }
-    .thumb { height: 200px; display: grid; place-items: center; font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
+    .thumb { position: relative; height: 200px; display: grid; place-items: center; font-size: 30px; font-weight: 800; letter-spacing: -0.02em; }
+    .thumb::after { content: "Concept"; position: absolute; top: 14px; left: 14px; background: rgba(255,255,255,.92); color: #111; font-family: "Inter", sans-serif; font-style: normal; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
     .body { padding: 22px 24px 26px; }
     .body h2 { font-size: 20px; margin-bottom: 4px; }
     .body p { color: #666; font-size: 15px; margin-bottom: 14px; }
     .tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tags span { font-size: 12px; font-weight: 600; background: #f2f2f2; padding: 4px 10px; border-radius: 999px; }
+
+    .about { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; margin: 100px 0 80px; }
+    .about p:not(.kicker) { color: #555; font-size: 17px; }
+    .facts { list-style: none; display: grid; gap: 12px; }
+    .facts li { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid #eee; border-radius: 14px; padding: 14px 16px; font-size: 15px; }
+
+    .contact { background: #111; color: #fff; border-radius: 24px; padding: 56px 32px; text-align: center; }
+    .contact p { color: #aaa; margin-bottom: 26px; }
+    .contact__links { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .foot { text-align: center; color: #999; font-size: 14px; margin-top: 40px; }
+
+    @media (max-width: 760px) {
+      .top { margin-bottom: 48px; }
+      .about { grid-template-columns: 1fr; gap: 28px; margin: 72px 0 56px; }
+      .contact { padding: 44px 20px; }
+    }
   </style>
 </head>
 <body>
   <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <span class="brand__mark">MR</span>
+        <div><strong>Martín Rawlins</strong><small>PudinTQ · Web Design</small></div>
+      </div>
+      <a class="btn" href="https://www.fiverr.com/pudintq" target="_blank" rel="noopener">Hire me on Fiverr</a>
+    </header>
+
     <p class="kicker">Sample Work</p>
     <h1>Websites built to bring in customers.</h1>
     <p class="lead">These are concept websites I designed to show the kind of work I offer small businesses: fast, responsive and focused on turning visitors into bookings.</p>
     <p class="note">ℹ️ All businesses, names, reviews and prices shown are fictional. Your website would be built around your real brand and content.</p>
+
     <div class="grid">
       <a class="card" href="brightside-dental/index.html">
         <div class="thumb" style="background:linear-gradient(135deg,#14b8a6,#0f766e);color:#fff">Brightside Dental</div>
@@ -60,6 +100,33 @@
         </div>
       </a>
     </div>
+
+    <section class="about">
+      <div>
+        <p class="kicker">About Me</p>
+        <h2>Hi, I'm Martín.</h2>
+        <p>I'm a Computer Engineering student (<em>Ingeniería Civil Informática</em>) from Chile, currently completing my professional internship at OpenHumboldt. I build clean, fast websites for small businesses using HTML, CSS and JavaScript, with a focus on mobile-friendly design and clear communication.</p>
+      </div>
+      <ul class="facts">
+        <li><span>🌎</span>Based in Chile, with working hours that overlap well with the Americas</li>
+        <li><span>🗣️</span>Spanish (native) and English</li>
+        <li><span>⚡</span>Quick replies and regular progress updates</li>
+        <li><span>💬</span>Every project gets a custom quote</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Need a website for your business?</h2>
+      <p>Tell me what you need and I'll get back to you with a plan and a quote.</p>
+      <div class="contact__links">
+        <a class="btn btn--light" href="https://www.fiverr.com/pudintq" target="_blank" rel="noopener">Fiverr</a>
+        <a class="btn btn--outline" href="mailto:martinrawlinsc@gmail.com">martinrawlinsc@gmail.com</a>
+        <a class="btn btn--outline" href="https://github.com/PudinTQ" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+    <footer class="foot">© <span id="year"></span> Martín Rawlins (PudinTQ)</footer>
   </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>

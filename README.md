@@ -1,10 +1,23 @@
-# Web Design Portfolio
+# Martín Rawlins · Web Design Portfolio
 
 Modern, responsive websites for small businesses, built to look great on any device and turn visitors into customers.
 
-🔗 **Live portfolio:** [pudintq.github.io/portfolio](https://pudintq.github.io/portfolio/)
+🔗 **Live portfolio:** [pudintq.github.io/PORTFOLIO/webpages/samples](https://pudintq.github.io/PORTFOLIO/webpages/samples/)
+💼 **Hire me on Fiverr:** [fiverr.com/pudintq](https://www.fiverr.com/pudintq)
 
 > ⚠️ **These are concept projects.** All businesses, names, reviews and prices are fictional. They were created to show the style and quality of work I offer. A client website would be built around your real brand, content and goals.
+
+---
+
+## About Me
+
+Hi! I'm **Martín Rawlins** (also known as **PudinTQ**), a Computer Engineering student (*Ingeniería Civil Informática*) from Chile, currently completing my professional internship at **OpenHumboldt**.
+
+I build clean, fast websites for small businesses using HTML, CSS and JavaScript, with a focus on mobile-friendly design and clear communication.
+
+- 🌎 Based in Chile: my working hours overlap well with clients in the Americas
+- 🗣️ Languages: Spanish (native) and English
+- ⚡ Quick replies and regular progress updates
 
 ---
 
@@ -20,7 +33,7 @@ Clean, trustworthy design for a family dental practice.
 - Sticky "Book Appointment" button on mobile
 - Embedded Google Map
 
-[View live demo](https://pudintq.github.io/portfolio/brightside-dental/) · [Source code](brightside-dental/)
+[View live demo](https://pudintq.github.io/PORTFOLIO/webpages/samples/brightside-dental/) · [Source code](webpages/samples/brightside-dental/)
 
 ---
 
@@ -33,7 +46,7 @@ Warm, editorial design for an independent café and bakery.
 - Animated SVG illustration and scrolling marquee
 - Newsletter sign-up form
 
-[View live demo](https://pudintq.github.io/portfolio/ember-oak-coffee/) · [Source code](ember-oak-coffee/)
+[View live demo](https://pudintq.github.io/PORTFOLIO/webpages/samples/ember-oak-coffee/) · [Source code](webpages/samples/ember-oak-coffee/)
 
 ---
 
@@ -46,7 +59,7 @@ Bold, high-energy dark theme for a strength and conditioning gym.
 - Coach profiles and testimonial section
 - Free-trial sign-up form
 
-[View live demo](https://pudintq.github.io/portfolio/ironclad-fitness/) · [Source code](ironclad-fitness/)
+[View live demo](https://pudintq.github.io/PORTFOLIO/webpages/samples/ironclad-fitness/) · [Source code](webpages/samples/ironclad-fitness/)
 
 ---
 
@@ -67,21 +80,24 @@ Bold, high-energy dark theme for a strength and conditioning gym.
 ## Project Structure
 
 ```
-portfolio/
-├── index.html              # Portfolio home page
-├── brightside-dental/      # Dental clinic demo
-├── ember-oak-coffee/       # Coffee shop demo
-└── ironclad-fitness/       # Gym demo
+PORTFOLIO/
+├── README.md
+└── webpages/
+    └── samples/
+        ├── index.html              # Portfolio home page
+        ├── brightside-dental/      # Dental clinic demo
+        ├── ember-oak-coffee/       # Coffee shop demo
+        └── ironclad-fitness/       # Gym demo
 ```
 
 Each project is self-contained with its own `index.html`, `styles.css` and `script.js`.
 
 ## Run Locally
 
-No installation needed. Clone the repository and open `index.html` in your browser:
+No installation needed. Clone the repository and open `webpages/samples/index.html` in your browser:
 
 ```bash
-git clone https://github.com/PudinTQ/portfolio.git
+git clone https://github.com/PudinTQ/PORTFOLIO.git
 ```
 
 ## Services
@@ -94,11 +110,12 @@ I build websites for small businesses, including:
 - Redesigns of outdated websites
 - Contact forms, booking requests and Google Maps integration
 
+Every project gets a custom quote. Send me a message with what you need!
+
 ## Contact
 
 Interested in a website for your business? Let's talk.
 
+- **Fiverr:** [fiverr.com/pudintq](https://www.fiverr.com/pudintq)
+- **Email:** [martinrawlinsc@gmail.com](mailto:martinrawlinsc@gmail.com)
 - **GitHub:** [github.com/PudinTQ](https://github.com/PudinTQ)
-- **Fiverr:** [fiverr.com/your-username](https://www.fiverr.com/your-username)
-- **Upwork:** [upwork.com/freelancers/your-profile](https://www.upwork.com/freelancers/your-profile)
-- **Email:** your-email@example.com
