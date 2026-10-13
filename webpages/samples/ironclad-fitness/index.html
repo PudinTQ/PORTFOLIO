@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ironclad Fitness (Demo) | Gym Website Sample</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Ironclad Fitness is a 24/7 strength and conditioning gym in Denver. Group classes, personal training and a free 7-day trial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="demo-bar">
+      <span><strong>Demo project</strong><span class="demo-bar__long"> · Fictional business created as a web design sample</span></span>
+      <a href="../index.html">← View portfolio</a>
+    </div>
+    <div class="container header__inner">
+      <a href="#" class="logo"><span class="logo__mark">IC</span>Ironclad</a>
+      <nav class="nav" id="nav">
+        <a href="#programs">Programs</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#trial" class="btn btn--accent">Free Trial</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="tag reveal"><span class="dot"></span> Open 24/7 · RiNo, Denver</p>
+        <h1 class="reveal">Stronger<br>than <span class="outline">yesterday</span>.</h1>
+        <p class="hero__lead reveal">Coached strength training, high-intensity classes and a community that won't let you quit. Your first 7 days are on us.</p>
+        <div class="hero__actions reveal">
+          <a href="#trial" class="btn btn--accent btn--lg">Start Free Trial</a>
+          <a href="#programs" class="btn btn--outline btn--lg">View Programs</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div><strong>24/7</strong><span>Access</span></div>
+          <div><strong>40+</strong><span>Weekly classes</span></div>
+          <div><strong>12</strong><span>Certified coaches</span></div>
+          <div><strong>1,500+</strong><span>Members</span></div>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>Strength</span><span>HIIT</span><span>Boxing</span><span>Mobility</span><span>Olympic Lifting</span><span>Spin</span>
+          <span>Strength</span><span>HIIT</span><span>Boxing</span><span>Mobility</span><span>Olympic Lifting</span><span>Spin</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="section" id="programs">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">// Programs</p>
+          <h2>Pick your fight.</h2>
+        </div>
+        <div class="programs">
+          <article class="program reveal">
+            <span class="program__num">01</span>
+            <h3>Strength Lab</h3>
+            <p>Barbell-focused coaching for squats, deadlifts and presses. Progressive programming that tracks every PR.</p>
+            <ul><li>60 min</li><li>All levels</li></ul>
+          </article>
+          <article class="program reveal">
+            <span class="program__num">02</span>
+            <h3>Burn HIIT</h3>
+            <p>Heart-rate driven intervals on rowers, bikes and sleds. Burn up to 800 calories in 45 minutes.</p>
+            <ul><li>45 min</li><li>Intermediate</li></ul>
+          </article>
+          <article class="program reveal">
+            <span class="program__num">03</span>
+            <h3>Fight Club</h3>
+            <p>Boxing and kickboxing technique, bag work and conditioning. No sparring required.</p>
+            <ul><li>50 min</li><li>All levels</li></ul>
+          </article>
+          <article class="program reveal">
+            <span class="program__num">04</span>
+            <h3>1-on-1 Coaching</h3>
+            <p>A personal plan, nutrition guidance and weekly check-ins with a dedicated coach.</p>
+            <ul><li>Custom</li><li>Results-focused</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="section section--alt" id="schedule">
+      <div class="container">
+        <div class="section__head section__head--row reveal">
+          <div>
+            <p class="eyebrow">// Class Schedule</p>
+            <h2>Find your time.</h2>
+          </div>
+          <div class="days" id="days" role="tablist"></div>
+        </div>
+        <div class="schedule reveal" id="schedule-list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">// Membership</p>
+          <h2>No contracts. No excuses.</h2>
+          <div class="toggle">
+            <span class="toggle__label active" id="lblMonthly">Monthly</span>
+            <button class="toggle__switch" id="billingToggle" role="switch" aria-checked="false" aria-label="Toggle annual billing"><span></span></button>
+            <span class="toggle__label" id="lblAnnual">Annual <em>Save 20%</em></span>
+          </div>
+        </div>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Open Gym</h3>
+            <p class="plan__desc">Full equipment access, any time.</p>
+            <div class="plan__price"><span class="currency">$</span><span class="amount" data-monthly="49" data-annual="39">49</span><span class="per">/mo</span></div>
+            <ul>
+              <li>24/7 gym access</li>
+              <li>Locker rooms & showers</li>
+              <li>Free fitness assessment</li>
+              <li class="no">Group classes</li>
+              <li class="no">Personal coaching</li>
+            </ul>
+            <a href="#trial" class="btn btn--outline btn--block">Choose Plan</a>
+          </article>
+          <article class="plan plan--featured reveal">
+            <span class="plan__badge">Most Popular</span>
+            <h3>Unlimited</h3>
+            <p class="plan__desc">Everything you need to transform.</p>
+            <div class="plan__price"><span class="currency">$</span><span class="amount" data-monthly="99" data-annual="79">99</span><span class="per">/mo</span></div>
+            <ul>
+              <li>24/7 gym access</li>
+              <li>Unlimited group classes</li>
+              <li>Progress tracking app</li>
+              <li>1 guest pass / month</li>
+              <li class="no">Personal coaching</li>
+            </ul>
+            <a href="#trial" class="btn btn--accent btn--block">Choose Plan</a>
+          </article>
+          <article class="plan reveal">
+            <h3>Elite</h3>
+            <p class="plan__desc">Coaching that guarantees results.</p>
+            <div class="plan__price"><span class="currency">$</span><span class="amount" data-monthly="229" data-annual="183">229</span><span class="per">/mo</span></div>
+            <ul>
+              <li>Everything in Unlimited</li>
+              <li>4 personal sessions / month</li>
+              <li>Custom nutrition plan</li>
+              <li>InBody scans</li>
+              <li>Priority class booking</li>
+            </ul>
+            <a href="#trial" class="btn btn--outline btn--block">Choose Plan</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="section section--alt">
+      <div class="container calc">
+        <div class="reveal">
+          <p class="eyebrow">// Tools</p>
+          <h2>Know your numbers.</h2>
+          <p class="muted">Calculate your BMI in seconds. Then book a free InBody scan for the full picture: muscle mass, body fat and more.</p>
+        </div>
+        <form class="calc__form reveal" id="bmiForm">
+          <div class="calc__row">
+            <label>Height (ft)<input type="number" name="ft" min="3" max="8" value="5" required></label>
+            <label>Height (in)<input type="number" name="in" min="0" max="11" value="10" required></label>
+            <label>Weight (lb)<input type="number" name="lb" min="60" max="600" value="175" required></label>
+          </div>
+          <button type="submit" class="btn btn--accent btn--block">Calculate BMI</button>
+          <div class="calc__result" id="bmiResult">
+            <strong id="bmiValue">--</strong>
+            <span id="bmiLabel">Enter your details above</span>
+            <div class="bar"><div class="bar__marker" id="bmiMarker"></div></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Coaches -->
+    <section class="section" id="coaches">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">// Coaches</p>
+          <h2>Built by the best.</h2>
+        </div>
+        <div class="coaches">
+          <article class="coach reveal">
+            <div class="coach__img" style="--h:80">MJ</div>
+            <h3>Marcus Johnson</h3>
+            <span>Head Coach · Strength</span>
+            <p>Former D1 linebacker. CSCS certified. 500 lb deadlift.</p>
+          </article>
+          <article class="coach reveal">
+            <div class="coach__img" style="--h:20">EL</div>
+            <h3>Elena Lopez</h3>
+            <span>HIIT & Conditioning</span>
+            <p>Ironman finisher who makes burpees (almost) fun.</p>
+          </article>
+          <article class="coach reveal">
+            <div class="coach__img" style="--h:200">KO</div>
+            <h3>Kenji Ota</h3>
+            <span>Boxing & Muay Thai</span>
+            <p>10 years of pro fight experience. Patient with beginners.</p>
+          </article>
+          <article class="coach reveal">
+            <div class="coach__img" style="--h:300">RW</div>
+            <h3>Rachel Wu</h3>
+            <span>Mobility & Nutrition</span>
+            <p>Registered dietitian and yoga instructor. Fixes your squat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+      <div class="container reveal">
+        <p class="testimonial__quote">"I lost 42 pounds and deadlifted twice my bodyweight in my first year. The coaches here genuinely care whether you show up."</p>
+        <p class="testimonial__author"><strong>Chris T.</strong> · Member since 2023</p>
+      </div>
+    </section>
+
+    <!-- Trial form -->
+    <section class="section" id="trial">
+      <div class="container trial">
+        <div class="trial__text reveal">
+          <p class="eyebrow">// Free 7-Day Pass</p>
+          <h2>Your first week is on us.</h2>
+          <p class="muted">Unlimited classes, full gym access and a free assessment with a coach. No credit card required.</p>
+          <ul class="trial__list">
+            <li>3100 Brighton Blvd, Denver, CO 80216</li>
+            <li><a href="tel:+17205550199">(720) 555-0199</a></li>
+            <li><a href="mailto:team@ironcladfit.com">team@ironcladfit.com</a></li>
+          </ul>
+        </div>
+        <form class="trial__form reveal" id="trialForm" novalidate>
+          <label>Full name<input type="text" name="name" required placeholder="Jordan Smith"></label>
+          <label>Email<input type="email" name="email" required placeholder="jordan@email.com"></label>
+          <label>Phone<input type="tel" name="phone" placeholder="(720) 555-0000"></label>
+          <label>Main goal
+            <select name="goal">
+              <option>Build muscle</option>
+              <option>Lose weight</option>
+              <option>Get fitter overall</option>
+              <option>Learn boxing</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--accent btn--lg btn--block">Claim My Free Pass</button>
+          <p class="trial__msg" id="trialMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo"><span class="logo__mark">IC</span>Ironclad</a>
+      <nav>
+        <a href="#programs">Programs</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#trial">Free Trial</a>
+      </nav>
+      <p>© <span id="year"></span> Ironclad Fitness · Demo website — fictional business</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brightside Dental (Demo) | Family & Cosmetic Dentist Website Sample</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Brightside Dental offers gentle family, cosmetic and emergency dentistry in Austin, Texas. Book your visit online today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>📍 2400 S Lamar Blvd, Austin, TX</span>
+      <span>Mon–Fri 8am–6pm · Sat 9am–2pm</span>
+      <a href="tel:+15125550142">📞 (512) 555-0142</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="demo-bar">
+      <span><strong>Demo project</strong><span class="demo-bar__long"> · Fictional business created as a web design sample</span></span>
+      <a href="../index.html">← View portfolio</a>
+    </div>
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="currentColor"/><path d="M13 14c0-3 3-4 7-2 4-2 7-1 7 2 0 4-1 6-2 10-1 3-2 4-3 1l-2-5-2 5c-1 3-2 2-3-1-1-4-2-6-2-10z" fill="#fff"/></svg>
+        Brightside<span>Dental</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#team">Our Team</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#book" class="btn btn--primary nav__cta">Book Appointment</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <span class="pill">⭐ 4.9 rating from 800+ Austin families</span>
+          <h1>Gentle dental care that makes you <em>smile</em> again.</h1>
+          <p>From routine cleanings to complete smile makeovers, our friendly team uses the latest technology to keep your whole family healthy — without the anxiety.</p>
+          <div class="hero__actions">
+            <a href="#book" class="btn btn--primary btn--lg">Book Your Visit</a>
+            <a href="#services" class="btn btn--ghost btn--lg">Explore Services</a>
+          </div>
+          <ul class="hero__checks">
+            <li>✓ New patients welcome</li>
+            <li>✓ Most insurance accepted</li>
+            <li>✓ Same-day emergencies</li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__blob"></div>
+          <svg class="hero__tooth" viewBox="0 0 200 220" aria-hidden="true">
+            <defs>
+              <linearGradient id="toothGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset="1" stop-color="#e3f6f5"/>
+              </linearGradient>
+            </defs>
+            <path d="M40 40c0-25 30-35 60-18 30-17 60-7 60 18 0 35-8 55-16 95-6 30-16 45-26 12l-18-50-18 50c-10 33-20 18-26-12-8-40-16-60-16-95z" fill="url(#toothGrad)" stroke="#0f766e" stroke-width="4"/>
+            <circle cx="80" cy="70" r="6" fill="#0f766e"/>
+            <circle cx="120" cy="70" r="6" fill="#0f766e"/>
+            <path d="M82 92q18 16 36 0" fill="none" stroke="#0f766e" stroke-width="5" stroke-linecap="round"/>
+            <path d="M150 20l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#fbbf24"/>
+            <path d="M30 120l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#fbbf24"/>
+          </svg>
+          <div class="float-card float-card--1">
+            <strong>12,000+</strong><span>Happy patients</span>
+          </div>
+          <div class="float-card float-card--2">
+            <strong>Same day</strong><span>Emergency visits</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos / insurance -->
+    <section class="insurers">
+      <div class="container">
+        <p>We work with most major insurance plans</p>
+        <div class="insurers__list">
+          <span>Delta Dental</span><span>Cigna</span><span>Aetna</span><span>MetLife</span><span>Guardian</span><span>United Concordia</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Our Services</span>
+          <h2>Everything your smile needs, under one roof</h2>
+          <p>Comprehensive care for kids, adults and seniors — delivered with patience and transparent pricing.</p>
+        </div>
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__icon">🦷</div>
+            <h3>General Dentistry</h3>
+            <p>Check-ups, cleanings, fillings and digital X-rays to keep problems from ever starting.</p>
+            <a href="#book">Book a cleaning →</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">✨</div>
+            <h3>Teeth Whitening</h3>
+            <p>Professional in-office whitening that brightens your smile up to 8 shades in one visit.</p>
+            <a href="#book">Get whiter teeth →</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">😁</div>
+            <h3>Invisalign®</h3>
+            <p>Straighten your teeth discreetly with clear aligners and a custom 3D treatment plan.</p>
+            <a href="#book">Free consultation →</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">🔩</div>
+            <h3>Dental Implants</h3>
+            <p>Permanent, natural-looking replacements for missing teeth that last a lifetime.</p>
+            <a href="#book">Learn more →</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">👶</div>
+            <h3>Kids Dentistry</h3>
+            <p>A fun, gentle first experience at the dentist — with prizes after every visit.</p>
+            <a href="#book">Book for your child →</a>
+          </article>
+          <article class="service reveal">
+            <div class="service__icon">🚑</div>
+            <h3>Emergency Care</h3>
+            <p>Toothache, chipped tooth or lost crown? Call us — we save time for same-day emergencies.</p>
+            <a href="tel:+15125550142">Call now →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section--tint" id="about">
+      <div class="container about">
+        <div class="about__stats reveal">
+          <div class="stat"><strong data-count="15">0</strong><span>Years in Austin</span></div>
+          <div class="stat"><strong data-count="12000">0</strong><span>Patients served</span></div>
+          <div class="stat"><strong data-count="98">0</strong><span>% would recommend</span></div>
+          <div class="stat"><strong data-count="6">0</strong><span>Expert dentists</span></div>
+        </div>
+        <div class="about__text reveal">
+          <span class="eyebrow">Why Brightside</span>
+          <h2>A dental office that actually feels relaxing</h2>
+          <p>We built Brightside for people who used to dread the dentist. Noise-cancelling headphones, Netflix on the ceiling, warm blankets and a team that explains every step — before it happens.</p>
+          <ul class="features">
+            <li><span>💬</span><div><strong>Clear, upfront pricing</strong><p>You'll know the cost before any treatment begins. No surprise bills.</p></div></li>
+            <li><span>🧑‍⚕️</span><div><strong>Modern technology</strong><p>3D scans, digital X-rays with 90% less radiation and laser treatments.</p></div></li>
+            <li><span>🕒</span><div><strong>Flexible scheduling</strong><p>Early mornings, Saturdays and online booking that takes 60 seconds.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Meet the Team</span>
+          <h2>Friendly faces, expert hands</h2>
+        </div>
+        <div class="team">
+          <article class="member reveal">
+            <div class="member__avatar" style="--c1:#14b8a6;--c2:#0f766e">SR</div>
+            <h3>Dr. Sarah Reyes, DDS</h3>
+            <span>Founder · General & Cosmetic</span>
+            <p>UT Health San Antonio graduate with 15 years of experience creating confident smiles.</p>
+          </article>
+          <article class="member reveal">
+            <div class="member__avatar" style="--c1:#60a5fa;--c2:#1d4ed8">MC</div>
+            <h3>Dr. Michael Chen, DMD</h3>
+            <span>Implants & Oral Surgery</span>
+            <p>Board-certified implant specialist known for making complex procedures painless.</p>
+          </article>
+          <article class="member reveal">
+            <div class="member__avatar" style="--c1:#f472b6;--c2:#be185d">AP</div>
+            <h3>Dr. Aisha Patel, DDS</h3>
+            <span>Pediatric Dentistry</span>
+            <p>Loved by kids (and parents) for her patience and her famous sticker collection.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section--dark" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Patient Reviews</span>
+          <h2>Don't just take our word for it</h2>
+        </div>
+        <div class="slider reveal">
+          <div class="slider__track" id="sliderTrack">
+            <blockquote class="review">
+              <div class="stars">★★★★★</div>
+              <p>"I've been terrified of dentists my whole life. Dr. Reyes and her team were so patient that I actually fell asleep during my cleaning. Never thought that was possible!"</p>
+              <cite>— Jessica M., Austin</cite>
+            </blockquote>
+            <blockquote class="review">
+              <div class="stars">★★★★★</div>
+              <p>"Chipped a tooth on a Saturday morning and they got me in within two hours. Professional, fast and the repair looks perfect."</p>
+              <cite>— David R., Round Rock</cite>
+            </blockquote>
+            <blockquote class="review">
+              <div class="stars">★★★★★</div>
+              <p>"My kids actually ask when their next dentist visit is. Dr. Patel is amazing with children. Highly recommend for families!"</p>
+              <cite>— Amanda K., South Austin</cite>
+            </blockquote>
+          </div>
+          <div class="slider__dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions? We've got answers.</h2>
+        </div>
+        <div class="faq reveal">
+          <details open>
+            <summary>Do you accept my insurance?</summary>
+            <p>We're in-network with most major PPO plans including Delta Dental, Cigna, Aetna and MetLife. Call us and we'll verify your benefits for free before your visit.</p>
+          </details>
+          <details>
+            <summary>I don't have insurance. Can I still be seen?</summary>
+            <p>Absolutely. Our Brightside Membership Plan costs $29/month and includes two cleanings, exams, X-rays and 20% off all other treatments.</p>
+          </details>
+          <details>
+            <summary>What should I bring to my first appointment?</summary>
+            <p>A photo ID, your insurance card (if any) and a list of medications. You can also fill out your forms online after booking to save time.</p>
+          </details>
+          <details>
+            <summary>Do you offer sedation for anxious patients?</summary>
+            <p>Yes. We offer nitrous oxide ("laughing gas") and oral sedation options so you can stay calm and comfortable throughout your treatment.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section section--tint" id="book">
+      <div class="container booking">
+        <div class="booking__info reveal">
+          <span class="eyebrow">Book Online</span>
+          <h2>Ready for a brighter smile?</h2>
+          <p>Request an appointment and our team will confirm your time within one business hour.</p>
+          <ul class="contact-list">
+            <li><span>📞</span><a href="tel:+15125550142">(512) 555-0142</a></li>
+            <li><span>✉️</span><a href="mailto:hello@brightsidedental.com">hello@brightsidedental.com</a></li>
+            <li><span>📍</span>2400 S Lamar Blvd, Suite 110, Austin, TX 78704</li>
+          </ul>
+          <iframe class="map" title="Brightside Dental location" loading="lazy" src="https://maps.google.com/maps?q=2400%20S%20Lamar%20Blvd%20Austin%20TX&z=14&output=embed"></iframe>
+        </div>
+        <form class="form reveal" id="bookingForm" novalidate>
+          <h3>Request an Appointment</h3>
+          <div class="form__row">
+            <label>First name<input type="text" name="first" required></label>
+            <label>Last name<input type="text" name="last" required></label>
+          </div>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Phone<input type="tel" name="phone" required></label>
+          <div class="form__row">
+            <label>Service
+              <select name="service">
+                <option>Check-up & Cleaning</option>
+                <option>Teeth Whitening</option>
+                <option>Invisalign Consultation</option>
+                <option>Dental Implants</option>
+                <option>Kids Dentistry</option>
+                <option>Emergency</option>
+              </select>
+            </label>
+            <label>Preferred date<input type="date" name="date"></label>
+          </div>
+          <label class="check"><input type="checkbox" name="new"> I'm a new patient</label>
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Request Appointment</button>
+          <p class="form__msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="#" class="logo logo--light">Brightside<span>Dental</span></a>
+        <p>Gentle family & cosmetic dentistry in the heart of Austin, Texas.</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon–Fri: 8:00am – 6:00pm<br>Saturday: 9:00am – 2:00pm<br>Sunday: Closed</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#services">Services</a><br><a href="#team">Our Team</a><br><a href="#book">Book Online</a></p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Brightside Dental. All rights reserved.</span>
+      <span>Demo website — fictional business</span>
+    </div>
+  </footer>
+
+  <a href="#book" class="mobile-cta">Book Appointment</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

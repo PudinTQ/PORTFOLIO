@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember & Oak (Demo) | Coffee Shop Website Sample</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Ember & Oak is an independent specialty coffee house and bakery in Shoreditch, London. Slow-roasted beans, fresh pastries and all-day brunch.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="demo-bar">
+      <span><strong>Demo project</strong><span class="demo-bar__long"> · Fictional business created as a web design sample</span></span>
+      <a href="../index.html">← View portfolio</a>
+    </div>
+    <div class="container header__inner">
+      <a href="#" class="logo">Ember <span>&</span> Oak</a>
+      <nav class="nav" id="nav">
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#beans">Beans</a>
+        <a href="#visit">Visit</a>
+        <a href="#visit" class="btn btn--dark">Find Us</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__kicker reveal">Est. 2016 · Shoreditch, London</p>
+          <h1 class="reveal">Slow coffee<br>for <em>fast</em> mornings.</h1>
+          <p class="hero__lead reveal">Small-batch beans roasted on site, flaky pastries baked before sunrise, and a corner table with your name on it.</p>
+          <div class="hero__actions reveal">
+            <a href="#menu" class="btn btn--dark">See the Menu</a>
+            <a href="#visit" class="link-arrow">Opening hours →</a>
+          </div>
+        </div>
+        <div class="hero__art reveal">
+          <div class="sun"></div>
+          <svg class="cup" viewBox="0 0 260 260" aria-hidden="true">
+            <g class="steam" fill="none" stroke="#7a4b2a" stroke-width="5" stroke-linecap="round">
+              <path d="M100 70c-12-14 12-24 0-40"/>
+              <path d="M130 64c-12-14 12-24 0-40"/>
+              <path d="M160 70c-12-14 12-24 0-40"/>
+            </g>
+            <path d="M60 100h140l-14 110a24 24 0 0 1-24 20h-64a24 24 0 0 1-24-20z" fill="#f6efe6" stroke="#2b1a10" stroke-width="5"/>
+            <path d="M200 120h14a24 24 0 0 1 0 48h-20" fill="none" stroke="#2b1a10" stroke-width="5"/>
+            <path d="M66 100h128" stroke="#2b1a10" stroke-width="5"/>
+            <ellipse cx="130" cy="104" rx="62" ry="8" fill="#7a4b2a"/>
+            <path d="M118 104c4-6 20-6 24 0-4 4-20 4-24 0z" fill="#e8c9a0"/>
+            <rect x="40" y="232" width="180" height="10" rx="5" fill="#2b1a10"/>
+          </svg>
+          <div class="badge">
+            <svg viewBox="0 0 120 120"><defs><path id="circle" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs><text><textPath href="#circle">ROASTED IN LONDON · EST. 2016 · </textPath></text></svg>
+            <span>☕</span>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Flat White</span><span>✺</span><span>Cardamom Buns</span><span>✺</span><span>Single Origin Pour-Over</span><span>✺</span><span>Sourdough Toast</span><span>✺</span><span>Iced Oat Latte</span><span>✺</span>
+          <span>Flat White</span><span>✺</span><span>Cardamom Buns</span><span>✺</span><span>Single Origin Pour-Over</span><span>✺</span><span>Sourdough Toast</span><span>✺</span><span>Iced Oat Latte</span><span>✺</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section" id="story">
+      <div class="container story">
+        <div class="story__tiles reveal">
+          <div class="tile tile--a"><span>Roasting<br>every Tuesday</span></div>
+          <div class="tile tile--b"><span>Baked<br>at 5am</span></div>
+          <div class="tile tile--c"><span>Dog<br>friendly</span></div>
+        </div>
+        <div class="story__text reveal">
+          <p class="kicker">Our Story</p>
+          <h2>Two friends, one old roaster, and a very stubborn idea.</h2>
+          <p>Ember & Oak started in a converted print shop on Redchurch Street with a second-hand roaster and a promise: never serve a cup we wouldn't queue for ourselves.</p>
+          <p>Nine years later we still roast every batch in the back room, buy directly from farmers in Ethiopia, Colombia and Guatemala, and know most of our regulars by their usual order.</p>
+          <div class="signature">— Tom & Priya, founders</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section section--dark" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">The Menu</p>
+          <h2>Made for lingering.</h2>
+        </div>
+        <div class="tabs reveal" role="tablist">
+          <button class="tab active" role="tab" aria-selected="true" data-tab="coffee">Coffee</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="brunch">Brunch</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="bakery">Bakery</button>
+        </div>
+
+        <div class="menu active" id="coffee" role="tabpanel">
+          <div class="item"><div><h3>Espresso</h3><p>House blend, notes of dark chocolate & cherry</p></div><span>£2.80</span></div>
+          <div class="item"><div><h3>Flat White</h3><p>Double ristretto, silky whole or oat milk</p></div><span>£3.60</span></div>
+          <div class="item"><div><h3>Cortado</h3><p>Equal parts espresso and warm milk</p></div><span>£3.40</span></div>
+          <div class="item"><div><h3>Pour-Over <em>Guest bean</em></h3><p>Rotating single origin, brewed by hand</p></div><span>£4.50</span></div>
+          <div class="item"><div><h3>Iced Oat Latte</h3><p>Cold milk, double shot, a touch of maple</p></div><span>£4.20</span></div>
+          <div class="item"><div><h3>Dirty Chai</h3><p>House-spiced chai with a shot of espresso</p></div><span>£4.40</span></div>
+        </div>
+
+        <div class="menu" id="brunch" role="tabpanel">
+          <div class="item"><div><h3>Avocado Sourdough</h3><p>Chilli, lime, feta, poached egg</p></div><span>£10.50</span></div>
+          <div class="item"><div><h3>Shakshuka</h3><p>Baked eggs, spiced tomato, labneh, flatbread</p></div><span>£11.80</span></div>
+          <div class="item"><div><h3>Buttermilk Pancakes</h3><p>Seasonal berries, whipped ricotta, maple</p></div><span>£10.20</span></div>
+          <div class="item"><div><h3>The Full Oak <em>Vegan option</em></h3><p>Eggs, bacon, mushrooms, beans, hash brown</p></div><span>£14.00</span></div>
+          <div class="item"><div><h3>Granola Bowl</h3><p>House granola, Greek yoghurt, honey, fruit</p></div><span>£7.80</span></div>
+          <div class="item"><div><h3>Grilled Cheese</h3><p>Montgomery cheddar, kimchi, sourdough</p></div><span>£9.50</span></div>
+        </div>
+
+        <div class="menu" id="bakery" role="tabpanel">
+          <div class="item"><div><h3>Cardamom Bun</h3><p>Our bestseller. Swedish-style, sticky & fragrant</p></div><span>£3.80</span></div>
+          <div class="item"><div><h3>Butter Croissant</h3><p>72-hour laminated, French butter</p></div><span>£3.20</span></div>
+          <div class="item"><div><h3>Pain au Chocolat</h3><p>Two bars of 70% dark chocolate</p></div><span>£3.60</span></div>
+          <div class="item"><div><h3>Banana Bread <em>Gluten free</em></h3><p>Brown butter, walnuts, served warm</p></div><span>£3.90</span></div>
+          <div class="item"><div><h3>Almond Croissant</h3><p>Twice baked with frangipane</p></div><span>£4.20</span></div>
+          <div class="item"><div><h3>Sourdough Loaf</h3><p>Take one home — 24h fermented</p></div><span>£5.50</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beans -->
+    <section class="section" id="beans">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="kicker">Take Home Our Beans</p>
+          <h2>Roasted this week. Delivered next.</h2>
+        </div>
+        <div class="beans">
+          <article class="bean reveal" style="--bag:#c2410c">
+            <div class="bean__bag"><span>Ember</span><small>House Blend</small></div>
+            <h3>Ember Blend</h3>
+            <p class="bean__origin">Brazil · Colombia</p>
+            <p class="bean__notes">Chocolate · Hazelnut · Caramel</p>
+            <div class="bean__foot"><strong>£12.50</strong><button class="add" data-name="Ember Blend">Add to bag</button></div>
+          </article>
+          <article class="bean reveal" style="--bag:#3f6212">
+            <div class="bean__bag"><span>Yirga</span><small>Single Origin</small></div>
+            <h3>Yirgacheffe</h3>
+            <p class="bean__origin">Ethiopia · Washed</p>
+            <p class="bean__notes">Jasmine · Lemon · Peach</p>
+            <div class="bean__foot"><strong>£14.00</strong><button class="add" data-name="Yirgacheffe">Add to bag</button></div>
+          </article>
+          <article class="bean reveal" style="--bag:#1e3a8a">
+            <div class="bean__bag"><span>Huila</span><small>Single Origin</small></div>
+            <h3>Huila Decaf</h3>
+            <p class="bean__origin">Colombia · Sugarcane process</p>
+            <p class="bean__notes">Red apple · Toffee · Cocoa</p>
+            <div class="bean__foot"><strong>£13.00</strong><button class="add" data-name="Huila Decaf">Add to bag</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes -->
+    <section class="quotes">
+      <div class="container quotes__inner reveal">
+        <blockquote>
+          <p>"The best flat white in East London, and I've tried them all."</p>
+          <cite>East End Food Notes</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Come for the coffee, stay for the cardamom buns. Then buy three more."</p>
+          <cite>Customer review · Laura P.</cite>
+        </blockquote>
+        <blockquote>
+          <p>"A proper neighbourhood café with world-class beans."</p>
+          <cite>The Coffee Guide</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="section section--cream" id="visit">
+      <div class="container visit">
+        <div class="visit__info reveal">
+          <p class="kicker">Come Say Hello</p>
+          <h2>Visit us</h2>
+          <address>
+            42 Redchurch Street<br>Shoreditch, London E2 7DP
+          </address>
+          <table class="hours">
+            <tbody>
+              <tr data-day="1"><td>Monday</td><td>7:00 – 17:00</td></tr>
+              <tr data-day="2"><td>Tuesday</td><td>7:00 – 17:00</td></tr>
+              <tr data-day="3"><td>Wednesday</td><td>7:00 – 17:00</td></tr>
+              <tr data-day="4"><td>Thursday</td><td>7:00 – 19:00</td></tr>
+              <tr data-day="5"><td>Friday</td><td>7:00 – 19:00</td></tr>
+              <tr data-day="6"><td>Saturday</td><td>8:00 – 18:00</td></tr>
+              <tr data-day="0"><td>Sunday</td><td>9:00 – 16:00</td></tr>
+            </tbody>
+          </table>
+          <p class="open-status" id="openStatus"></p>
+        </div>
+        <iframe class="map reveal" title="Ember & Oak location" loading="lazy" src="https://maps.google.com/maps?q=Redchurch%20Street%20London&z=15&output=embed"></iframe>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container newsletter__inner reveal">
+        <div>
+          <h2>Get a free coffee on us.</h2>
+          <p>Join the Ember Letter for new beans, events and a welcome voucher.</p>
+        </div>
+        <form class="newsletter__form" id="newsForm" novalidate>
+          <input type="email" name="email" placeholder="you@email.com" aria-label="Email address" required>
+          <button type="submit" class="btn btn--light">Subscribe</button>
+          <p class="newsletter__msg" id="newsMsg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">Ember <span>&</span> Oak</a>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+        <a href="#" aria-label="Email">hello@emberandoak.co.uk</a>
+      </div>
+      <p>© <span id="year"></span> Ember & Oak Coffee Ltd. · Demo website — fictional business</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
